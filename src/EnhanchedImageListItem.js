@@ -26,8 +26,8 @@ export function EnhanchedImageListItem(props) {
 
   return (
     <ImageListItem onContextMenu={handleClick}>
-      <img src={data.picture} alt={data.title} />
-      <ImageListItemBar title={data.title} />
+      <img src={data.picture} alt={data.name} />
+      <ImageListItemBar title={data.name} />
 
       {typeof renderContextMenu === "function" ? (
         <Menu
